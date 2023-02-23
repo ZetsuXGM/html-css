@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 477px;
+            border-collapse: collapse;
+            position: relative; /*a posição da tabela deve ser relativa para se fixar os ths que estão no thead*/ 
+        }
+        thead > tr > th {
+            position: sticky; /*cola o seletor em questão no lugar selecionado abaixo*/
+            top: -1px;
+            background-color: rgb(73, 73, 73);
+        }        
+        thead, tfoot {
+            background-color: rgb(73, 73, 73);
+            color: white;
+            
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 13px;
+            
+        }
+        /*tr:hover {
+            border: 2px solid blue;
+        } outra alternativa para vizualizar tabelas*/
+        .numero {
+            text-align: right;
+        }
+        tbody > tr:nth-child(2n) { /*Pseudo-classe que faz o efeito zebrado. */
+            background-color: rgb(180, 180, 180);
+        }
+        caption {
+            font-weight: bold;
+            font-size: 1.53em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando tabelas</h1>
+    <table>
+        <caption>Tabela zebrada e thead fixo</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">41 262 199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">15 989 929</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">10 444 526</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">10 693 929</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">8 796 448</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">5 200 300</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">4 007 333</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="numero">3 000 666</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="numero" ><strong>12 0801 267</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt temporibus ut repudiandae. Nulla voluptatum ratione accusamus maxime porro libero exercitationem enim deserunt velit molestias sit ea quae, reiciendis magni alias quas nihil est sapiente impedit in. Fugiat explicabo, reiciendis dolorem cum assumenda, repellat veritatis reprehenderit harum amet a nam voluptatum repellendus tempora quia, quos illum ab tenetur illo odio? Unde illo quod nemo quam quaerat? Sunt facilis quaerat reiciendis velit ipsum inventore, laudantium ea quae repellat. Voluptatum cum neque aut corporis quisquam reiciendis, est modi dignissimos. Quas adipisci earum officiis cumque accusamus voluptate. Culpa autem quas soluta, impedit sed aut veniam ullam eligendi quibusdam iste natus aliquid adipisci, exercitationem et expedita optio quam quidem! Quod quo dignissimos quisquam voluptas animi nobis perspiciatis asperiores quam ex, sequi quos et expedita blanditiis veniam illum soluta, ut quaerat saepe mollitia earum rerum, incidunt officia reprehenderit porro. Velit veritatis at, fuga iure perferendis odio ab rem distinctio nostrum veniam ut dolor omnis quisquam earum impedit, ipsam asperiores nesciunt recusandae. Dolore, itaque quibusdam amet veritatis debitis officiis pariatur iusto tempora qui iure odio voluptatem. Expedita assumenda corporis tempore nisi praesentium ab, laudantium quo quos minus maxime dolor error quidem nam enim magnam nobis incidunt magni quod! Pariatur excepturi dolore officiis quia animi earum tenetur hic cupiditate, voluptatem aliquam ex ipsa. Fugit eaque minus tenetur natus, maiores, accusamus tempore enim nam obcaecati voluptatum amet! Neque tempore iste id voluptatum repellendus cupiditate ratione animi quis libero deleniti distinctio, earum, accusamus eligendi quidem vitae iure, blanditiis at non officia molestiae saepe aliquam minus. Perspiciatis sunt fugit suscipit, repudiandae autem officia fugiat harum itaque veritatis aspernatur quis mollitia rem voluptatibus minima quam fuga aliquid ratione debitis nobis maiores consequuntur ipsa. Molestias recusandae, velit ea itaque molestiae repellat ipsum facilis dolor voluptatum nostrum repellendus eaque pariatur hic quos porro vel quam dicta illo quo obcaecati quae id magni dignissimos totam. Quae magnam explicabo facilis iste incidunt reprehenderit exercitationem laboriosam pariatur placeat dolor fugit possimus voluptas, minus repudiandae iure suscipit voluptatem quos natus corrupti numquam commodi enim aspernatur ea eius? Dolore eveniet culpa architecto dolorum quisquam omnis labore pariatur vero, at expedita minima quibusdam fugit illo quis rerum quae debitis, reprehenderit fugiat eius, obcaecati numquam? Quisquam quae incidunt natus. Quisquam, cupiditate vitae, harum beatae ullam cumque velit veritatis est asperiores praesentium, sint vel laboriosam at consectetur dolor et quod laborum unde sed ipsam? Nobis pariatur, officia impedit id fugiat facilis dicta atque, necessitatibus similique animi omnis quasi mollitia velit eaque, soluta repellendus consectetur harum distinctio corporis totam recusandae? Non, totam vel. Possimus iste fugiat ad consequuntur asperiores dolorum tempora consectetur molestias obcaecati, beatae consequatur ab eos inventore perferendis in tenetur itaque voluptatem nobis eum totam. Totam facere error quibusdam amet labore ipsum laborum rem, illo exercitationem itaque aut quam. Provident deserunt similique rem, veritatis cupiditate officiis minus maiores, doloribus vel, tempore dolore eum. Officia natus mollitia distinctio eaque iure omnis nobis placeat autem consectetur. Deserunt, suscipit! Unde soluta doloremque in velit aspernatur, magni repellendus, obcaecati, officiis nihil ex placeat alias.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quae ex excepturi repellendus sint inventore numquam rerum, debitis cumque quod atque. Itaque enim consequuntur iusto alias! Numquam cumque fugiat ipsam delectus praesentium obcaecati ad, assumenda pariatur officiis doloribus id suscipit quidem esse vel molestias fuga inventore commodi blanditiis. Voluptatum magni asperiores assumenda sed fuga quam officiis aperiam laborum distinctio, fugit eum, recusandae ipsa eos quas beatae illo unde, quis dolor iusto. Doloremque assumenda ea deleniti, voluptate sit unde, eum ducimus ex ut, officiis nobis illo placeat voluptas eos saepe? Ut accusantium iure tempora qui molestias consequatur sint sunt officia rerum?</p>
+</body>
+</html>
