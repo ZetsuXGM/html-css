@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            text-align: center;
+        }
+        td, th {
+            border: 2px solid black;
+            padding: 15px;
+        }
+        thead {
+            background-color: rgb(99, 99, 99);
+            color: white;
+        }
+        .marcador {
+            background-color: greenyellow;
+        }
+        .cidade {
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <colgroup><!--As colunas atuam em oredem respectiva, ou seja, a primeira declaraçao de col atuara na primeira coluna, assim suscetivamente. A função das classes é para melhor compreendimento e aplicação das folhas de estilos.-->
+            <col class="cidade">
+            <col class="csexo">
+            <col class="marcador" span="2">
+        </colgroup>
+
+        <tr>
+            <th>Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Joaquim</td>
+            <td>25</td>
+            <td>M</td>
+            <td>Apicultor</td>
+        </tr>
+        <tr>
+            <td>Aghata</td>
+            <td>47</td>
+            <td>F</td>
+            <td>Escritora</td>
+        </tr>
+        <tr>
+            <td>Guillermo</td>
+            <td>56</td>
+            <td>M</td>
+            <td>Estaroste</td>
+        </tr>
+    </table>
+
+</body>
+</html>

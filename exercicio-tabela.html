@@ -4,72 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercicio Tabela</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-        }
-        caption {
-            font-size: 1.3em;
-            font-weight: bold;
-            font-variant: small-caps;
-        }
-        th, td {
-            padding: 10px;
-            border: 1px solid black;
-            text-align: center;
+            font-size: 1.2em;
         }
         table {
             border-collapse: collapse;
+            width: 800px;
+        }
+        td, th {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        thead {
+            color: white;
+            background-color: rgb(36, 88, 36);
+        }
+        .medias {
+            text-align: left;
+            background-color: rgba(36, 88, 36, 0.774);
+            color: white;
+        }
+        .num {
+            text-align: center;
+        }
+        .nmedias {
+            background-color: rgba(36, 88, 36, 0.774);
+            color: white;
+            text-align: center;
+        }
+        #conteiner {
+            overflow-x: auto;
         }
     </style>
 </head>
 <body>
-    <h1>Exercicio com tabela</h1>
-    <table>
-        <caption>
-            Adaptações
-        </caption>
-        <thead>
-            <tr>
-                <th scope="col">Genero</th>
-                <th colspan="2" scope="colgroup">Série</th>
-                <th colspan="2" scope="colgroup">Filme</th>
-                <th colspan="2" scope="colgroup">Mangá</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">Fantasia</th>
-                <td>Anéis do Poder</td>
-                <td>Game of Thrones</td>
-                <td>Viajem de Chihiro</td>
-                <td>Mononoke</td>
-                <td>Doungeon ni Deai</td>
-                <td>Full Metal Allchimist</td>
-            </tr>
-            <tr>
-                <th scope="row">Horror</th>
-                <td>A. Horror Story</td>
-                <td>A.H.S. 2 Temp</td>
-                <td>Hereditário</td>
-                <td>Bebe de Rosemary</td>
-                <td>Corpsy Party</td>
-                <td>Junji Ito*</td>
-            </tr>
-            <tr>
-                <th scope="row">Melhores de todos os tempos</th>
-                <td colspan="2">Arcane</td>
-                <td colspan="2">Diabo Nosso de Cada Dia</td>
-                <td colspan="2">Shingeky no Kiojin</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <th rowspan="2" scope="rowgroup">Exemplo</th>
-            <td>Dados</td>
-            <th>Dados</th>
-            <th>Dados</th>
-        </tfoot>
-    </table>
+    <h1>Tabela Responsiva</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellat illum sunt iste beatae quisquam? Officia numquam, totam ipsum repellat magnam, repellendus, aliquam doloribus sapiente accusamus quam velit adipisci et.</p>
+
+    <div id="conteiner">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Area</th>
+                    <th rowspan="2" scope="col">Disciplina</th>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th rowspan="2" scope="col">Média</th>
+                </tr>
+                <tr>
+                    <th scope="col">Nota 1</th>
+                    <th scope="col">Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4"
+                    scope="rowgroup">Exatas</th>
+                    <td>Matematica</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="row" class="medias">Média de Exatas</th>
+                    <td class="nmedias">0.0</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="4">Humanas</th>
+                    <td>Historia</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Portugues</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Sociologia</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="row" class="medias">Média de Humanas</th>
+                    <td class="nmedias">0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
