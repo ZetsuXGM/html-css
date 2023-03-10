@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe {
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando iframe</h1>
+
+    <p>
+        Este é um site muito útil para quem quer saber mais sobre status code.
+
+        <iframe src="https://http.cat/" frameborder="0" height="700" scrolling="yes"><!--definições inline podem ser feitas no iframe, porém as definições css se sobrepoem as inline. A definição padrão é 300x150px-->
+
+            Gatos são legais! <!--caso o dispositivo não seja compativel, esta mensagem aparecera no lugar-->
+        </iframe>
+    </p>
+    <p>
+        Tentando rodar o site do Google em um iframe.
+
+        <iframe src="https://google.com.br" frameborder="0">
+            Google não não autorizou.
+        </iframe>
+    </p>
+</body>
+</html>
